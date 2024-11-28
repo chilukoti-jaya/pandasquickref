@@ -1,1 +1,2 @@
 df_no_duplicates = df.drop_duplicates()
+df_unique = df.drop_duplicates(subset=['A', 'B', 'C'])
