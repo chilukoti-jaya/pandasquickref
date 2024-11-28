@@ -3,3 +3,10 @@ df_no_duplicates = df.drop_duplicates()
 df_unique = df.drop_duplicates(subset=['A', 'B', 'C'])
 # Sorting by three columns: col1, col2, and col3
 sorted_df = df.sort_values(by=['col1', 'col2', 'col3'])
+check before sort 
+if df.empty:
+    print("DataFrame is empty")
+else:
+    # Sort by three columns
+    df_sorted = df.sort_values(by=['col1', 'col2', 'col3'])
+    print(df_sorted)
